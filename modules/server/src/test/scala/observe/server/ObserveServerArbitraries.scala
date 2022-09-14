@@ -11,7 +11,7 @@ import observe.model.Observation
 import org.scalacheck.Arbitrary._
 import org.scalacheck.{ Arbitrary, Cogen }
 import observe.model.BatchCommandState
-import observe.model.enum.Instrument
+import observe.model.enums.Instrument
 import observe.model.{ Conditions, Operator }
 import observe.model.ObserveModelArbitraries._
 

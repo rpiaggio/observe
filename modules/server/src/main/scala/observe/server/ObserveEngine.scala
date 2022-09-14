@@ -48,7 +48,7 @@ import observe.model.UserPrompt.SeqCheck
 import observe.model.UserPrompt.TargetCheckOverride
 import observe.model._
 import observe.model.config._
-import observe.model.enum._
+import observe.model.enums._
 import observe.model.events.{ SequenceStart => ClientSequenceStart, _ }
 import ConfigUtilOps._
 import EngineState.atSequence

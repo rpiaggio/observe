@@ -18,7 +18,7 @@ import observe.model.{
   SequenceView,
   SequencesQueue
 }
-import observe.model.enum.BatchExecState
+import observe.model.enums.BatchExecState
 import observe.web.client.model._
 
 import scala.collection.immutable.SortedMap

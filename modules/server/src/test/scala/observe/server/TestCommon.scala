@@ -24,7 +24,7 @@ import observe.engine
 import observe.engine.{ Action, Result }
 import observe.engine.Result.PauseContext
 import observe.engine.Result.PartialVal
-import observe.model.enum.{ Instrument, Resource }
+import observe.model.enums.{ Instrument, Resource }
 import observe.model.dhs._
 import observe.model.config._
 import observe.common.test._

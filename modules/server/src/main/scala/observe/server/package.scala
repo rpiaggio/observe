@@ -30,7 +30,7 @@ import observe.engine.Result.PauseContext
 import observe.engine._
 import observe.model.Observation
 import observe.model._
-import observe.model.enum._
+import observe.model.enums._
 import observe.server.SequenceGen.StepGen
 import squants.Time
 
@@ -38,6 +38,8 @@ package server {
 
   import lucuma.schemas.ObservationDB.Scalars.VisitId
   import observe.server.InstrumentSystem.ElapsedTime
+
+  import scala.concurrent.duration.Duration
 
   @Lenses
   final case class EngineState[F[_]](
@@ -88,11 +90,11 @@ package server {
   }
 
   final case class ObserveContext[F[_]](
-    resumePaused: Time => Stream[F, Result[F]],
+    resumePaused: Duration => Stream[F, Result[F]],
     progress:     ElapsedTime => Stream[F, Result[F]],
     stopPaused:   Stream[F, Result[F]],
     abortPaused:  Stream[F, Result[F]],
-    expTime:      Time
+    expTime:      Duration
   ) extends PauseContext[F]
 
 }

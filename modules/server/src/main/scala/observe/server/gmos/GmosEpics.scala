@@ -11,7 +11,7 @@ import cats.effect.Sync
 import cats.syntax.all._
 import edu.gemini.epics.acm._
 import mouse.all._
-import observe.model.enum.ApplyCommandResult
+import observe.model.enums.ApplyCommandResult
 import observe.server.{ EpicsCommandBase, EpicsSystem, ObserveCommandBase }
 import observe.server.EpicsCommandBase.setParameter
 import observe.server.EpicsUtil._
